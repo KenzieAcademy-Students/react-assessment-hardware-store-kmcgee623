@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import { Navigation } from "./components/index";
+import { Navigation, ProductDetail } from "./components/index";
 import Homepage from "./views/Homepage";
 import ProductList from "./views/ProductList";
 
@@ -115,6 +115,10 @@ const App = (props) => {
         <Route
           path="/products"
           element={<ProductList productList={state.productList} />}
+        />
+        <Route
+          path="/products/detail:productId"
+          element={<ProductDetail productList={state.productList} />}
         />
       </Routes>
     </div>
