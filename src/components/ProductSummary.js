@@ -6,7 +6,7 @@ const ProductSummary = (props) => {
   return (
     <div className="productSummary" onClick={() => navigate("detail:" + props.product.id)}>
       {props.product.name} - ${props.product.price}{" "}
-      <span  onClick={() => navigate("detail:" + props.product.id)} className="productArrow">&gt;</span>
+      <span  onClick={() => navigate("detail:" + props.product.id)} className="productArrow"></span>
     </div>
   );
 };
