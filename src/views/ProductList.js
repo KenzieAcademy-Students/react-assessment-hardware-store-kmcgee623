@@ -5,7 +5,7 @@ const ProductList = (props) => {
     <div className="productList">
       <h2>Our Products</h2>
       <ul>
-        {props?.productList?.map((product) => (
+        {props.productList.map((product) => (
           <ProductSummary key={product.id} product={product} />
         ))}
       </ul>
